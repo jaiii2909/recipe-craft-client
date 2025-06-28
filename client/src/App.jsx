@@ -21,6 +21,9 @@ function App() {
         </Routes>
       </BrowserRouter>
     </AuthProvider>
+    <div className="text-center p-10 text-3xl text-blue-500 font-bold">
+      Tailwind is Working!
+    </div>
   );
 }
 
