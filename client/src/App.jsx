@@ -9,21 +9,24 @@ import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/add" element={<AddRecipe />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/recipes/:id" element={<RecipeDetail />} />
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
-    <div className="text-center p-10 text-3xl text-blue-500 font-bold">
-      Tailwind is Working!
-    </div>
+    <>
+      <AuthProvider>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/add" element={<AddRecipe />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/recipes/:id" element={<RecipeDetail />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
+
+      <div className="text-center p-10 text-3xl text-blue-500 font-bold">
+        Tailwind is Working!
+      </div>
+    </>
   );
 }
 
