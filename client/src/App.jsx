@@ -6,6 +6,8 @@ import Register from "./pages/Register";
 import RecipeDetail from "./pages/RecipeDetail";
 import Navbar from "./components/Navbar";
 import { AuthProvider } from "./context/AuthContext";
+import SuggestRecipes from "./pages/SuggestRecipes";
+
 
 function App() {
   return (
